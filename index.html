@@ -2,81 +2,82 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Weekly Food & Leftover Tracking Sheet</title>
+<title>Shelter Food Service Tracker</title>
 
 <style>
 
 body{
-font-family: Arial, sans-serif;
-background:#ffffff;
-padding:30px;
+  font-family: Arial, sans-serif;
+  background:#eef2f5;
+  display:flex;
+  justify-content:center;
+  padding:30px;
 }
 
 .container{
-max-width:1100px;
-margin:auto;
+  width:1100px;
 }
 
 h1{
-text-align:center;
-margin-bottom:5px;
-}
-
-.subtitle{
-text-align:center;
-margin-bottom:25px;
-color:#555;
-}
-
-.button-area{
-text-align:center;
-margin-bottom:20px;
-}
-
-button{
-padding:12px 22px;
-font-size:16px;
-border:none;
-background:#222;
-color:white;
-cursor:pointer;
-border-radius:6px;
-}
-
-button:hover{
-background:#444;
+  text-align:center;
+  margin-bottom:20px;
+  color:#333;
 }
 
 table{
-width:100%;
-border-collapse:collapse;
+  width:100%;
+  border-collapse:collapse;
+  background:white;
 }
 
 th, td{
-border:2px solid black;
-padding:10px;
-height:45px;
+  border:2px solid #333;
+  height:55px;
+  text-align:center;
 }
 
 th{
-background:#f0f0f0;
+  color:white;
+  font-weight:bold;
 }
 
-.day{
-font-weight:bold;
+/* Section headers */
+
+.section{
+  font-size:20px;
+  color:white;
 }
+
+.breakfast{
+  background:#ffa726;
+}
+
+.lunch{
+  background:#66bb6a;
+}
+
+.dinner{
+  background:#5c6bc0;
+}
+
+/* Column colors */
+
+.food{background:#546e7a;}
+.date{background:#42a5f5;}
+.time{background:#26a69a;}
+.day{background:#ffb74d;}
+.discard{background:#ef5350;}
+
+.food-col{
+  width:230px;
+}
+
+/* print friendly */
 
 @media print{
-
-button{
-display:none;
-}
-
-body{
-padding:0;
-}
-
+  body{
+    background:white;
+  }
 }
 
 </style>
@@ -86,64 +87,63 @@ padding:0;
 
 <div class="container">
 
-<h1>Weekly Food & Leftover Tracking Sheet</h1>
-<p class="subtitle">Track meals served, leftovers, fridge storage, and discard dates</p>
-
-<div class="button-area">
-<button onclick="downloadSheet()">Download / Print Sheet</button>
-</div>
+<h1>Shelter Food Service Tracker</h1>
 
 <table>
 
+<!-- BREAKFAST -->
+<tr><th colspan="7" class="section breakfast">Breakfast</th></tr>
+
 <tr>
-<th>Day</th>
-<th>Meal Type</th>
-<th>What Was Served</th>
-<th>Enough For Snack (Y/N)</th>
-<th>Fridge Location</th>
-<th>Safe Until</th>
-<th>Keep / Toss</th>
+<th class="food food-col">Food Item</th>
+<th class="date">Date Served</th>
+<th class="time">Time</th>
+<th class="day">Day 1</th>
+<th class="day">Day 2</th>
+<th class="day">Day 3</th>
+<th class="discard">Discard</th>
 </tr>
 
-<tr><td class="day">Monday</td><td>Breakfast</td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td></td><td>Lunch</td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td></td><td>Donation</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
 
-<tr><td class="day">Tuesday</td><td>Breakfast</td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td></td><td>Lunch</td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td></td><td>Donation</td><td></td><td></td><td></td><td></td><td></td></tr>
 
-<tr><td class="day">Wednesday</td><td>Breakfast</td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td></td><td>Lunch</td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td></td><td>Donation</td><td></td><td></td><td></td><td></td><td></td></tr>
+<!-- LUNCH -->
+<tr><th colspan="7" class="section lunch">Lunch</th></tr>
 
-<tr><td class="day">Thursday</td><td>Breakfast</td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td></td><td>Lunch</td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td></td><td>Donation</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr>
+<th class="food food-col">Food Item</th>
+<th class="date">Date Served</th>
+<th class="time">Time</th>
+<th class="day">Day 1</th>
+<th class="day">Day 2</th>
+<th class="day">Day 3</th>
+<th class="discard">Discard</th>
+</tr>
 
-<tr><td class="day">Friday</td><td>Breakfast</td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td></td><td>Lunch</td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td></td><td>Donation</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
 
-<tr><td class="day">Saturday</td><td>Breakfast</td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td></td><td>Lunch</td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td></td><td>Donation</td><td></td><td></td><td></td><td></td><td></td></tr>
 
-<tr><td class="day">Sunday</td><td>Breakfast</td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td></td><td>Lunch</td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td></td><td>Donation</td><td></td><td></td><td></td><td></td><td></td></tr>
+<!-- DINNER -->
+<tr><th colspan="7" class="section dinner">Dinner</th></tr>
+
+<tr>
+<th class="food food-col">Food Item</th>
+<th class="date">Date Served</th>
+<th class="time">Time</th>
+<th class="day">Day 1</th>
+<th class="day">Day 2</th>
+<th class="day">Day 3</th>
+<th class="discard">Discard</th>
+</tr>
+
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
 
 </table>
 
 </div>
-
-<script>
-
-function downloadSheet() {
-window.print();
-}
-
-</script>
 
 </body>
 </html>
