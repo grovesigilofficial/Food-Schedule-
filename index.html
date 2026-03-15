@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Shelter Food Schedule</title>
+<title>Weekly Food & Leftover Tracking Sheet</title>
 
 <style>
 
@@ -14,43 +14,39 @@ body{
   padding:20px;
 }
 
+.container{
+  max-width:1100px;
+  width:100%;
+}
+
+h1{
+  text-align:center;
+  margin-bottom:5px;
+}
+
+.subtitle{
+  text-align:center;
+  margin-bottom:20px;
+  font-size:14px;
+}
+
 table{
   border-collapse:collapse;
   width:100%;
-  max-width:1000px;
 }
 
 th, td{
   border:2px solid black;
-  height:80px;
-  width:120px;
+  padding:10px;
+  height:45px;
 }
 
 th{
-  height:40px;
+  background:#f2f2f2;
 }
 
-.print-title{
-  text-align:center;
-  font-size:28px;
-  margin-bottom:20px;
-}
-
-button{
-  margin-bottom:20px;
-  padding:10px 20px;
-  font-size:16px;
-  cursor:pointer;
-}
-
-/* makes it print clean */
-@media print{
-  body{
-    padding:0;
-  }
-  button{
-    display:none;
-  }
+.day{
+  font-weight:bold;
 }
 
 </style>
@@ -58,142 +54,64 @@ button{
 
 <body>
 
-<div>
+<div class="container">
 
-<div class="print-title">Food Schedule</div>
-
-<button onclick="window.print()">Download / Print</button>
-
-<table>
-
-<tr>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-
-<tr>
-<th></th>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-
-<tr>
-<th></th>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-
-<tr>
-<th></th>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-
-<tr>
-<th></th>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-
-<tr>
-<th></th>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-
-</table>
-
-
-<br><br>
-
-<div class="print-title">Dinner</div>
+<h1>Weekly Food & Leftover Tracking Sheet</h1>
+<div class="subtitle">Track meals served, leftovers, fridge storage, and discard dates</div>
 
 <table>
 
 <tr>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
+<th>Day</th>
+<th>Meal Type</th>
+<th>What Was Served</th>
+<th>Enough For Snack (Y/N)</th>
+<th>Fridge Location</th>
+<th>Safe Until</th>
+<th>Keep / Toss</th>
 </tr>
 
-<tr>
-<th></th>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
+<!-- MONDAY -->
+<tr><td class="day">Monday</td><td>Breakfast</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td>Lunch</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td>Dinner</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td>Donation</td><td></td><td></td><td></td><td></td><td></td></tr>
 
-<tr>
-<th></th>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
+<!-- TUESDAY -->
+<tr><td class="day">Tuesday</td><td>Breakfast</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td>Lunch</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td>Dinner</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td>Donation</td><td></td><td></td><td></td><td></td><td></td></tr>
 
-<tr>
-<th></th>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
+<!-- WEDNESDAY -->
+<tr><td class="day">Wednesday</td><td>Breakfast</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td>Lunch</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td>Dinner</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td>Donation</td><td></td><td></td><td></td><td></td><td></td></tr>
 
-<tr>
-<th></th>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
+<!-- THURSDAY -->
+<tr><td class="day">Thursday</td><td>Breakfast</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td>Lunch</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td>Dinner</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td>Donation</td><td></td><td></td><td></td><td></td><td></td></tr>
 
-<tr>
-<th></th>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
+<!-- FRIDAY -->
+<tr><td class="day">Friday</td><td>Breakfast</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td>Lunch</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td>Dinner</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td>Donation</td><td></td><td></td><td></td><td></td><td></td></tr>
+
+<!-- SATURDAY -->
+<tr><td class="day">Saturday</td><td>Breakfast</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td>Lunch</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td>Dinner</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td>Donation</td><td></td><td></td><td></td><td></td><td></td></tr>
+
+<!-- SUNDAY -->
+<tr><td class="day">Sunday</td><td>Breakfast</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td>Lunch</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td>Dinner</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td>Donation</td><td></td><td></td><td></td><td></td><td></td></tr>
 
 </table>
 
