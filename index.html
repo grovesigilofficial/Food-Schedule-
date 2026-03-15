@@ -2,81 +2,45 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Shelter Food Service Tracker</title>
+<title>Shelter Food Schedule</title>
 
 <style>
 
 body{
   font-family: Arial, sans-serif;
-  background:#eef2f5;
+  background:white;
   display:flex;
   justify-content:center;
-  padding:30px;
-}
-
-.container{
-  width:1100px;
-}
-
-h1{
-  text-align:center;
-  margin-bottom:20px;
-  color:#333;
+  padding:20px;
 }
 
 table{
-  width:100%;
   border-collapse:collapse;
-  background:white;
+  width:100%;
+  max-width:1000px;
+  margin-bottom:40px;
 }
 
 th, td{
-  border:2px solid #333;
-  height:55px;
-  text-align:center;
+  border:2px solid black;
+  height:80px;
+  width:120px;
 }
 
 th{
-  color:white;
-  font-weight:bold;
+  height:40px;
 }
 
-/* Section headers */
-
-.section{
-  font-size:20px;
-  color:white;
+.print-title{
+  text-align:center;
+  font-size:28px;
+  margin-bottom:20px;
 }
 
-.breakfast{
-  background:#ffa726;
-}
-
-.lunch{
-  background:#66bb6a;
-}
-
-.dinner{
-  background:#5c6bc0;
-}
-
-/* Column colors */
-
-.food{background:#546e7a;}
-.date{background:#42a5f5;}
-.time{background:#26a69a;}
-.day{background:#ffb74d;}
-.discard{background:#ef5350;}
-
-.food-col{
-  width:230px;
-}
-
-/* print friendly */
-
+/* makes it print clean */
 @media print{
   body{
-    background:white;
+    padding:0;
   }
 }
 
@@ -85,61 +49,138 @@ th{
 
 <body>
 
-<div class="container">
+<div>
 
-<h1>Shelter Food Service Tracker</h1>
+<div class="print-title">Food Schedule</div>
 
 <table>
 
-<!-- BREAKFAST -->
-<tr><th colspan="7" class="section breakfast">Breakfast</th></tr>
-
 <tr>
-<th class="food food-col">Food Item</th>
-<th class="date">Date Served</th>
-<th class="time">Time</th>
-<th class="day">Day 1</th>
-<th class="day">Day 2</th>
-<th class="day">Day 3</th>
-<th class="discard">Discard</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
 </tr>
 
-<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-
-
-<!-- LUNCH -->
-<tr><th colspan="7" class="section lunch">Lunch</th></tr>
-
 <tr>
-<th class="food food-col">Food Item</th>
-<th class="date">Date Served</th>
-<th class="time">Time</th>
-<th class="day">Day 1</th>
-<th class="day">Day 2</th>
-<th class="day">Day 3</th>
-<th class="discard">Discard</th>
+<th></th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 
-<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-
-
-<!-- DINNER -->
-<tr><th colspan="7" class="section dinner">Dinner</th></tr>
-
 <tr>
-<th class="food food-col">Food Item</th>
-<th class="date">Date Served</th>
-<th class="time">Time</th>
-<th class="day">Day 1</th>
-<th class="day">Day 2</th>
-<th class="day">Day 3</th>
-<th class="discard">Discard</th>
+<th></th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 
-<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr>
+<th></th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<th></th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<th></th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+</table>
+
+
+<div class="print-title">Dinner</div>
+
+<table>
+
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+
+<tr>
+<th></th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<th></th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<th></th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<th></th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<th></th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
 
 </table>
 
