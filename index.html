@@ -49,6 +49,21 @@ th{
   font-weight:bold;
 }
 
+.print-btn{
+  display:block;
+  margin:20px auto;
+  padding:10px 25px;
+  font-size:16px;
+  cursor:pointer;
+}
+
+/* Hide button when printing */
+@media print{
+  .print-btn{
+    display:none;
+  }
+}
+
 </style>
 </head>
 
@@ -58,6 +73,8 @@ th{
 
 <h1>Weekly Food & Leftover Tracking Sheet</h1>
 <div class="subtitle">Track meals served, leftovers, fridge storage, and discard dates</div>
+
+<button class="print-btn" onclick="window.print()">Download / Print Sheet</button>
 
 <table>
 
@@ -71,43 +88,36 @@ th{
 <th>Keep / Toss</th>
 </tr>
 
-<!-- MONDAY -->
 <tr><td class="day">Monday</td><td>Breakfast</td><td></td><td></td><td></td><td></td><td></td></tr>
 <tr><td></td><td>Lunch</td><td></td><td></td><td></td><td></td><td></td></tr>
 <tr><td></td><td>Dinner</td><td></td><td></td><td></td><td></td><td></td></tr>
 <tr><td></td><td>Donation</td><td></td><td></td><td></td><td></td><td></td></tr>
 
-<!-- TUESDAY -->
 <tr><td class="day">Tuesday</td><td>Breakfast</td><td></td><td></td><td></td><td></td><td></td></tr>
 <tr><td></td><td>Lunch</td><td></td><td></td><td></td><td></td><td></td></tr>
 <tr><td></td><td>Dinner</td><td></td><td></td><td></td><td></td><td></td></tr>
 <tr><td></td><td>Donation</td><td></td><td></td><td></td><td></td><td></td></tr>
 
-<!-- WEDNESDAY -->
 <tr><td class="day">Wednesday</td><td>Breakfast</td><td></td><td></td><td></td><td></td><td></td></tr>
 <tr><td></td><td>Lunch</td><td></td><td></td><td></td><td></td><td></td></tr>
 <tr><td></td><td>Dinner</td><td></td><td></td><td></td><td></td><td></td></tr>
 <tr><td></td><td>Donation</td><td></td><td></td><td></td><td></td><td></td></tr>
 
-<!-- THURSDAY -->
 <tr><td class="day">Thursday</td><td>Breakfast</td><td></td><td></td><td></td><td></td><td></td></tr>
 <tr><td></td><td>Lunch</td><td></td><td></td><td></td><td></td><td></td></tr>
 <tr><td></td><td>Dinner</td><td></td><td></td><td></td><td></td><td></td></tr>
 <tr><td></td><td>Donation</td><td></td><td></td><td></td><td></td><td></td></tr>
 
-<!-- FRIDAY -->
 <tr><td class="day">Friday</td><td>Breakfast</td><td></td><td></td><td></td><td></td><td></td></tr>
 <tr><td></td><td>Lunch</td><td></td><td></td><td></td><td></td><td></td></tr>
 <tr><td></td><td>Dinner</td><td></td><td></td><td></td><td></td><td></td></tr>
 <tr><td></td><td>Donation</td><td></td><td></td><td></td><td></td><td></td></tr>
 
-<!-- SATURDAY -->
 <tr><td class="day">Saturday</td><td>Breakfast</td><td></td><td></td><td></td><td></td><td></td></tr>
 <tr><td></td><td>Lunch</td><td></td><td></td><td></td><td></td><td></td></tr>
 <tr><td></td><td>Dinner</td><td></td><td></td><td></td><td></td><td></td></tr>
 <tr><td></td><td>Donation</td><td></td><td></td><td></td><td></td><td></td></tr>
 
-<!-- SUNDAY -->
 <tr><td class="day">Sunday</td><td>Breakfast</td><td></td><td></td><td></td><td></td><td></td></tr>
 <tr><td></td><td>Lunch</td><td></td><td></td><td></td><td></td><td></td></tr>
 <tr><td></td><td>Dinner</td><td></td><td></td><td></td><td></td><td></td></tr>
