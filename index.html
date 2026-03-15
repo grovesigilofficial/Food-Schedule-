@@ -18,7 +18,6 @@ table{
   border-collapse:collapse;
   width:100%;
   max-width:1000px;
-  margin-bottom:40px;
 }
 
 th, td{
@@ -37,10 +36,20 @@ th{
   margin-bottom:20px;
 }
 
+button{
+  margin-bottom:20px;
+  padding:10px 20px;
+  font-size:16px;
+  cursor:pointer;
+}
+
 /* makes it print clean */
 @media print{
   body{
     padding:0;
+  }
+  button{
+    display:none;
   }
 }
 
@@ -52,6 +61,8 @@ th{
 <div>
 
 <div class="print-title">Food Schedule</div>
+
+<button onclick="window.print()">Download / Print</button>
 
 <table>
 
@@ -117,6 +128,8 @@ th{
 
 </table>
 
+
+<br><br>
 
 <div class="print-title">Dinner</div>
 
